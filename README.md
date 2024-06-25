@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-  
 <body>
 
 <h1>Simple System HTML PHP CSS MySQL</h1>
@@ -43,6 +41,42 @@
     </li>
 </ul>
 
+<h2>Database Setup</h2>
+<p>Set up your MySQL database with the following SQL schema:</p>
+
+<pre><code>
+CREATE TABLE `auth` (
+  `id` int(11) NOT NULL,
+  `email` varchar(60) NOT NULL,
+  `password` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO `auth` (`id`, `email`, `password`) VALUES
+(1, 'admin@admin.com', 'admin');
+
+ALTER TABLE `auth`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `auth`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+</code></pre>
+
+<h3>Database Configuration</h3>
+<p>Configure your database connection by editing the <code>config.php</code> file located in <code>includes/php/</code>.</p>
+
+<pre><code>
+  DB_SERVER = 'localhost';
+  DB_USERNAME = 'root';
+  DB_PASSWORD = '';  
+  DB_NAME = 'project_php01';</code></pre>
+<?php
+'DB_SERVER', 'localhost'
+'DB_USERNAME', 'root'
+'DB_PASSWORD', ''
+'DB_NAME', 'project_php01'
+?>
+</code></pre>
+
 <h2>Getting Started</h2>
 <p>To start using the Simple System project:</p>
 <ol>
@@ -51,7 +85,6 @@
     <li>Set Up Database:</li>
     <ul>
         <li>Create a MySQL database.</li>
-        <li>Import the provided SQL file <code>database.sql</code> to set up the required tables.</li>
     </ul>
     <li>Configure Database Connection:</li>
     <ul>
