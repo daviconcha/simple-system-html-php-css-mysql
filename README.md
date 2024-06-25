@@ -9,6 +9,15 @@
 <h1>Simple System HTML PHP CSS MySQL</h1>
 <p>Welcome to the Simple System project repository! This project showcases a basic implementation using HTML, PHP, CSS, and MySQL. It currently features user authentication with session management and database verification.</p>
 
+<h2>Visual Examples</h2>
+<p>Below are visual examples of the Simple System:</p>
+<p></p>
+<p>Login Page</p>
+<img src="https://github.com/daviconcha/simple-system-html-php-css-mysql/assets/20704891/1dfbbee1-2e09-402b-8eae-69c3024d1eb6" alt="Login Page">
+<p></p>
+<p>Dashboard Page</p>   
+<img src="https://github.com/daviconcha/simple-system-html-php-css-mysql/assets/20704891/69e2627d-b570-400a-a3cf-6c4c02db0491" alt="Dashboard Page">
+    
 <h2>Features</h2>
 <ul>
     <li><strong>User Authentication:</strong> Enables users to securely log in using their email and password credentials.</li>
