@@ -8,7 +8,7 @@
 </head>
 <body>
     
-<!-- Formulário de Login -->
+<!-- Login Form -->
 <div class="login-container">
     <div class="container">
         <form action="includes/php/action_form.php" method="post">
@@ -24,7 +24,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <!-- Mensagem de erro -->
+                        <!-- error message -->
                         <div class="error-message">
                             <?php
                             if (isset($_GET['error'])) {
@@ -43,8 +43,6 @@
         </form>
     </div>
 </div>
-
-
 
 </body>
 </html>
